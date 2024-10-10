@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Cars database</h1>
+        <form id="searchCar">
+            <div class="textfield">
+                <label for="license_plate">License plate</label>
+                <input type="text" id="license_plate" name="license-plate">
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <p id="searchResult"></p>
+    </header>
+    <main>
+        <section class="input container">
+            <div id="message"></div>
+            <h2>Add car</h2>
+            <form id="addCar">
+                <div class="textfield">
+                    <label for="license">License plate <span style="color:red">*</span></label>
+                    <input type="text" id="license" name="license" required><br>
+                </div>
+                <div class="textfield">
+                    <label for="maker">Maker <span style="color:red">*</span></label>
+                    <input type="text" id="maker" name="maker" required><br>
+                </div>
+                <div class="textfield">
+                    <label for="model">Model <span style="color:red">*</span></label>
+                    <input type="text" id="model" name="model" required><br>
+                </div>
+                <div class="textfield">
+                    <label for="year">Year <span style="color:red">*</span></label>
+                    <input type="text" id="year" name="year" required><br>
+                </div>
+                <div class="textfield">
+                    <label for="current_owner">Owner</label>
+                    <input type="text" id="current_owner" name="current_owner"><br>
+                </div>
+                <div class="textfield">
+                    <label for="price">Price <span style="color:red">*</span></label>
+                    <input type="text" id="price" name="price" required><br>
+                </div>
+                <div class="textfield">
+                    <label for="color">Color</label>
+                    <select name="color" id="color">
+                        <option value="">--Select color--</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="blue">Yellow</option>
+                        <option value="blue">Black</option>
+                    </select>
+                    <!-- <input type="text" id="color" name="color" ><br> -->
+                </div>
+                <div>
+                    <button type="submit" id="button">Submit</button>
+                    <button type="reset" id="button">Reset</button>
+                </div>
+            </form>
+        </section>
+        <section class="output container">
+            <table id="carsTable">
+                <tr>
+                  <th>License Plate</th>
+                  <th>Maker</th>
+                  <th>Model</th>
+                  <th>Year</th>
+                  <th>Owner</th>
+                  <th>Price</th>
+                  <th>Discounted price</th>
+                  <th>Color</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            
+        </section>
+    </main> 
+    <footer>Copyright &copy</footer>
+    <script src="main.js"></script>
+</body>
+</html>
