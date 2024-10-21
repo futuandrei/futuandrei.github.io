@@ -1,3 +1,12 @@
+:root {
+	--background-color: hsl(120, 76%, 85%);
+	--background-color-2: hsl(120, 76%, 95%);
+	--background-color-card: hsl(62, 100%, 89%);
+	--background-color-button: hsl(141, 100%, 30%);
+	--outline-color: hsl(120, 61%, 57%);
+
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -5,37 +14,42 @@
 .hidden {
 	display: none;
 }
+body {
+	background-color: var(--background-color-2);
+}
 
 #container {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid #000000;
+	border: 2px solid  var(--outline-color);
 	display: flex;
 	flex-direction: column;
 }
 
 #animalDisplay {
-	background-color: #a5b3e3;
+	background-color: var(--background-color);
 	display: flex;
 	flex-wrap: wrap;
-
-
 	justify-content: center;
 }
 
 .card {
     width: 400px;
     height: 200px;
-    background-color: #e3a5a5;
+    background-color:var(--background-color-card);
     padding: 20px;
-	border: 1px solid #000000;
+	border: 1px solid var(--outline-color);
 	margin: 10px;
 }
 
 header {
 	text-align: center;
-	border-bottom: 2px solid #000000;
+	background-color: var(--background-color-card);
+	border-bottom: 2px solid var(--outline-color);
+}
+#searchFilters {
+	background-color: var(--background-color);
 }
 
 #sidebar {
@@ -48,12 +62,13 @@ header {
 
 #toggleSidebar {
 	width: 30px;
-	background-color: #ccc;
+	background-color: var(--background-color-button);
 	padding: 5px;
-	border: 1px solid #000000;
+	border: 1px solid var(--outline-color);
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 	font-weight: bold;
+	color: #fff;
 }
 
 #animalForm {
@@ -61,7 +76,7 @@ header {
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	background-color: #f9f9f9;
+	background-color: var(--background-color);
 }
 
 #animalForm h2 {
@@ -83,7 +98,7 @@ header {
 
 #animalForm button {
 	padding: 10px 20px;
-	background-color: #4CAF50;
+	background-color: var(--background-color-button);
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -91,5 +106,5 @@ header {
 }
 
 #animalForm button:hover {
-	background-color: #45a049;
+	background-color: hsl(141, 100%, 24%);
 }
