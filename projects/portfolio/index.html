@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Andrei Savolainen Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Savolainen Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2"  />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--- Header -->
+    <div class="header">
+        <div class="logo-and-text">
+            <div class="logo"></div>
+            <p>Andrei Savolainen Portfolio</p>
+        </div>
+        <nav>
+            <button class="mobile"></button>
+            <ul>
+                <li>
+                    <a href="#section1">About</a>
+                </li>
+                <li>
+                    <a href="#section2">Services</a>
+                </li>
+                <li>
+                    <a href="#section3">Skills</a>
+                </li>
+                <li>
+                    <a href="#section4">Projects</a>
+                </li>
+                <li>
+                    <a href="#section5">Contact</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--- Hero + About -->
+    <div id="section1" class="section-container hero">
+        <div class="content hero">
+            <h1>Learning developer skills to build <span>better digital products</span></h1>
+            <br><br>
+            <div class="about">
+                <img src="assets/user.png" alt="">
+                <p id="body-large">Hi there! 👋 I’m Andrei.<br><br>  
+
+                "I'm a designer and aspiring web developer living in Helsinki Finland.<br><br>
+                For many years I've been working as a designer creating web interfaces with a thought in the back of my mind: what would it be like not only to be able to design but also to be able to build what I design? <br><br>  
+
+                Throughout my career, I’ve had the privilege of working with diverse brands and projects, creating designs that not only look great but feel seamless for users. I also had a privilige to work with many developers and in the process I became to really appreciate their work. In my experience working with them I also had the constant feeling that to really bridge the gap between designers and developers both of them should understand each other better. And from this perspective, what would work better than really learning how it is to be a designer or a developer?<br><br>
+
+                With these thoughts I've decided to learn how to become a Full-Stack web developer in the August 2024 to reinvent myself and to become a better designer and to be able to build better digital proructs in the future. This portfolio is a small, humble snippet of my work as an aspiring Full-Stack web developer. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--- Services -->
+    <div id="section2" class="section-container services">
+        <div class="cap hero"></div> <!-- hero cap-->
+        <div class="content">
+            <h2>Services</h2>
+            <div class="container services">
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <img src="assets/serv_webdesign.svg" alt="Web UI Design">
+                    </div>
+                    <h3>Web UI Design</h3>
+                    <p>Anything and everything from wireframes, ready assets to polished layouts.</p>
+                  </div>
+                  <div class="service">
+                    <div class="icon-wrapper">
+                        <img src="assets/serv_dev.svg" alt="Web UI Design">
+                    </div>
+                    <h3>Web UI Development</h3>
+                    <p>Even though this competence is under construction at the moment, I have high expectations as an aspiring Front-end developer.</p>
+                  </div>
+                  <div class="service">
+                    <div class="icon-wrapper">
+                        <img src="assets/serv_graphicdesgin.svg" alt="Web UI Design">
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Print or digital, I've done few things here and there. Graphic design can be creating iconography, posters, book and brochure layouts.</p>
+                  </div>
+                  <div class="service">
+                    <div class="icon-wrapper">
+                        <img src="assets/serv_ux.svg" alt="Web UI Design">
+                    </div>
+                    <h3>User Experience & Service Design</h3>
+                    <p>For the project to succeeed, make sure to take the user on board. Live the user out and the result will likely be the opposite of success.</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!--- Skills -->
+    <div id="section3" class="section-container skills">
+        <div class="cap services"></div> <!-- services cap-->
+        <div class="content skills">
+            <h2>Skills</h2>
+            <div class="container skills">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-container">
+                      <div class="progress-bar" data-percentage="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-container">
+                      <div class="progress-bar" data-percentage="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Javascript</p>
+                    <div class="progress-container">
+                      <div class="progress-bar" data-percentage="50"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>React</p>
+                    <div class="progress-container">
+                      <div class="progress-bar" data-percentage="5"></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!--- Projects -->
+    <div id="section4" class="section-container projects">
+        <div class="cap skills"></div> <!-- skills cap-->
+        <div class="content projects">
+            <h2>Projects</h2>
+            <section class="project-grid">
+                <div class="project" onclick="openOverlay('project1')">
+                    <img class="project-img" src="assets/projects/thumb_pancakes.png" alt="Image for Card 1">
+                    <h3>Pancake maker</h3>
+                </div>
+                <div class="project" onclick="openOverlay('project2')">
+                    <img class="project-img" src="assets/projects/thumb_cars.png" alt="Image for Card 1">
+                    <h3>Car database</h3>
+                </div>
+                <div class="project" onclick="openOverlay('project3')">
+                    <img class="project-img" src="assets/projects/thumb_persons.png" alt="Image for Card 1">
+                    <h3>Persons with data API</h3>
+                </div>
+
+                <div class="project" onclick="openOverlay('project4')">
+                    <img class="project-img" src="assets/projects/thumb_calc.png" alt="Image for Card 1">
+                    <h3>Calculator</h3>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--- Contact -->
+    <div id="section5" class="section-container contact">
+        <div class="cap projects"></div> <!-- project cap-->
+        <div class="content">
+            <div class="contact-inputs">
+                <div>
+                    <h2>Say hey</h2>
+                </div>
+                <form>
+                    <div class="textfield">
+                        <label for="text">Your name</label>
+                        <input id="input" type="text">
+                    </div>
+                    <div class="textfield">
+                        <label for="text">Your email</label>
+                        <input id="input" type="text">
+                    </div>
+                    <div class="textfield">
+                        <label for="text">Message to me</label>
+                        <!-- <input id="last-input" type="text" rows="5"> -->
+                        <textarea id="last-input" name="description" rows="10" cols="33"></textarea>
+                    </div>
+                    <div class="textfield">
+                        <label for="text"></label>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-screen Overlay for each Project -->
+     <!-- Project pancake maker-->
+    <div id="project1" class="overlay">
+        <div class="overlay-content">      
+            <div class="header-bar">
+                <h2>Pancake maker</h2>
+                <button class="close-button" onclick="closeOverlay()">✖</button>
+            </div>
+
+            <!-- Project Text Content -->
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="assets/projects/thumb_pancakes.png" alt="Project Image">
+                </div>
+                <p>Pancake project gives the user the ability to customise pancake order and see the order information. Application implements JavaScript functionality for a pancake customization tool. Application dynamically updates the price based on user selections, such as pancake type, toppings, and extras. Application includes customer details and delivery options to complete the ordering process. </p><br>
+            </div>
+        </div>
+    </div>
+    <!-- Project pancake maker-->
+    <div id="project2" class="overlay">
+        <div class="overlay-content">      
+            <div class="header-bar">
+                <h2>Car database</h2>
+                <button class="close-button" onclick="closeOverlay()">✖</button>
+            </div>
+
+            <!-- Project Text Content -->
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="assets/projects/thumb_cars.png" alt="Project Image">
+                </div>
+                <p>Application gives the user the ability to add cars to the table and search added cars with a license plate number.</p><br>
+            </div>
+        </div>           
+    </div>
+    <!-- Project persons with data API -->
+    <div id="project3" class="overlay">
+        <div class="overlay-content">      
+            <div class="header-bar">
+                <h2>Persons with data API</h2>
+                <button class="close-button" onclick="closeOverlay()">✖</button>
+            </div>
+
+            <!-- Project Text Content -->
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="assets/projects/thumb_persons.png" alt="Project Image">
+                </div>
+                <p>Application shows a grid with cards, each having an image of the cat as well as the information such as user name and email for each cat. In the project, API containing user data, both images and names had to be called to get and render the data on the screen.</p><br>
+            </div>
+        </div>           
+    </div>
+    <!-- Project persons with data API -->
+    <div id="project4" class="overlay">
+        <div class="overlay-content">      
+            <div class="header-bar">
+                <h2>Calculator</h2>
+                <button class="close-button" onclick="closeOverlay()">✖</button>
+            </div>
+
+            <!-- Project Text Content -->
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="assets/projects/thumb_calc.png" alt="Project Image">
+                </div>
+                <p>This one was my own project where I wanted to create a replica of Mac OS calculator. The project started with creating the replica first using the CSS grid and later on functionality was added with the JavaScript.</p><br>
+            </div>
+        </div>           
+    </div>
+
+
+    <!--- Footer -->
+    <div id="section7" class="section-container footer">
+        <div class="cap contact"></div> <!-- project cap-->
+        <div class="content footer">
+            <p>
+            Copyright © 2024 Andrei Savolainen. All Rights Reserved.
+            </p>
+            <button id="backTop"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
