@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="display">0
+            <!-- <p>0</p> -->
+        </div>
+
+        <div class="buttons">     
+            <!-- 1 row buttons -->   
+            <button class="btn dark" value="C">
+                <img src="images/AC.svg"  alt="">    
+            </button>
+            <button class="btn dark" value="+/-">
+                <img src="images/plus-minus.svg" alt="">    
+            </button>
+            <button class="btn dark" value="%">
+                <img src="images/percent.svg" alt="">    
+            </button>
+            <button class="btn yellow" value="/">
+                <img src="images/divide.svg" alt="">    
+            </button>
+            
+            <!-- 2 row buttons -->
+            <button class="btn number" value="7">7</button>
+            <button class="btn number" value="8">8</button>
+            <button class="btn number" value="9">9</button>
+            <button class="btn yellow" value="*">
+                <img src="images/multiply.svg" alt="">
+            </button>
+
+            <!-- 3 row buttons -->
+            <button class="btn number" value="4">4</button>
+            <button class="btn number" value="5">5</button>
+            <button class="btn number" value="6">6</button>
+            <button class="btn yellow" value="-">
+                <img src="images/minus.svg" alt="">
+            </button>
+
+            <!-- 4 row buttons -->
+            <button class="btn number" value="1">1</button>
+            <button class="btn number" value="2">2</button>
+            <button class="btn number" value="3">3</button>
+            <button class="btn yellow" value="+">
+                <img src="images/add.svg" alt="">
+            </button>
+
+            <!-- 5 row buttons -->
+            <button class="btn" id="zero" value="0">0</button>
+            <button class="btn number" value=".">.</button>
+            <!-- <button class="btn" id="clear" value="C">C</button> -->
+            <button class="btn yellow" id="equals" value="=">
+                <img src="images/equal.svg" alt="">
+            </button>
+
+            <!-- <button class="btn" id="equals" value="=">=</button> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

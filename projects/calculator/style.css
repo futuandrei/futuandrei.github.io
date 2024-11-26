@@ -1,0 +1,192 @@
+:root {
+    --clr-dark-grey: #282728; /* Result*/
+    --clr-medium-grey: #3a393a;
+    --clr-light-grey: #5b5a5a;
+    --clr-lightest-grey: #eaeaea;
+    --clr-orange: #ff950c;
+    --clr-shadow: #000000;
+    
+    --clr-active-medium-grey: #282728;
+    --clr-active-light-grey: #9d9c9d;
+    --clr-active-orange: #c47207;
+    
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+        
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* In previous version this was main */
+body {
+    display: block;
+    justify-content: center;
+    align-items: center; /* was: align-content: center; */
+    align-content: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: var(--clr-lightest-grey); */
+    background: rgb(157,156,157);
+    background: linear-gradient(180deg, rgba(157,156,157,1) 0%, rgb(228, 209, 161) 100%);
+    background-attachment: fixed; 
+    
+}
+
+/* In previous version this was container */
+.calculator {
+    position: relative;
+    width: 378px;
+    margin: 0px auto;
+    /* padding-top: 100px; */
+    /* display: grid; */
+    /* display: grid; */
+    /* grid-template-rows: repeat(6, 1fr); */
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--clr-dark-grey);
+    border-radius: 20px;
+    background-color: rgba(242, 242, 242, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    /* background-color: rgba(242, 242, 242, 0.1); */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.dots {
+    display: flex;
+    height: 30px;
+    background-color: var(--clr-dark-grey);
+    padding-left: 5px;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--clr-light-grey);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.dot:nth-child(1) {
+    background-color: rgb(255, 59, 59);
+}
+.dot:nth-child(2) {
+    background-color: rgb(255, 209, 59);
+}
+.dot:nth-child(3) {
+    background-color: rgb(88, 208, 18);
+}
+
+.display {
+    max-width: 100%;
+    background-color: var(--clr-dark-grey);
+    color: white;
+    font-size: 90px;
+    font-weight: 100;
+    text-align: right;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #313031;
+    /* align-items: center; */
+}
+
+.btn.dark {
+/* display: grid; */
+background-color: var(--clr-medium-grey);
+/* width: 100%; */
+/* width: 100%; */
+/* border-style: solid;
+border-width: 1px;
+border-color: var(--clr-dark-grey); */
+height: 100%;
+align-content: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.btn.dark:active {
+    background-color: var(--clr-active-light-grey);
+}
+
+
+.btn.yellow {
+    /* display: grid; */
+    background-color: var(--clr-orange);
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: #313031; */
+    align-content: center;
+    justify-content: center;
+}
+
+.btn.yellow:active {
+    background-color: var(--clr-active-orange);
+}
+
+.btn.number {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    background-color: var(--clr-light-grey);
+    /* width: 95px; */
+    height:100%;
+    color: #fff;
+    font-size: 47px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.btn.number:active,
+#zero:active {
+    background-color: var(--clr-active-light-grey);
+}
+
+/* Equals button */
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--clr-light-grey);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--clr-dark-grey);
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 47px;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+img {
+    width: 80%;
+    height: 100%;
+    /* justify-self: center; */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(56%) saturate(927%) hue-rotate(201deg) brightness(124%) contrast(110%);
+}
+
+
+
+
