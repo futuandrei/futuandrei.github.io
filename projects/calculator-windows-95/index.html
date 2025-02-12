@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Windows 95 Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-hor">
+        <div class="container-ver">
+          <div class="border-box">
+            <div class="border-box-inner">
+              <div class="header">
+                <div class="header-top">
+                  <div class="icon-title">
+                    <img class="icon" src="assets/icon.jpg" alt="" />
+                    <h1>Calculator</h1>
+                  </div>
+                  <div class="three-buttons">
+                    <img
+                      class="square-button"
+                      src="assets/buttons-minimize.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="square-button"
+                      src="assets/buttons-full.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="square-button"
+                      src="assets/buttons-close.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="header-bottom">
+                  <ul>
+                    <li><span class="first">Ed</span>it</li>
+                    <li><span class="first">Vi</span>ew</li>
+                    <li><span class="first">He</span>lp</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Header element -->
+              <!-- Input element -->
+              <div class="display">0</div>
+
+              <!-- Top buttons -->
+              <div class="buttons-top">
+                <button class="btn disabled" id="disabled" value=""></button>
+                <button class="btn disabled" id="disabled" value="Backspace">
+                  Backspace
+                </button>
+                <button class="btn disabled" id="disabled" value="CE">
+                  CE
+                </button>
+                <button class="btn red" value="C">C</button>
+              </div>
+              <!-- Button grid -->
+              <div class="buttons">
+                <!-- 1 row buttons -->
+                <button class="btn disabled" value="MC">MC</button>
+                <button class="btn blue" value="7">7</button>
+                <button class="btn blue" value="8">8</button>
+                <button class="btn blue" value="9">9</button>
+                <button class="btn red" value="/">/</button>
+                <button class="btn blue" value="sqrt">sqrt</button>
+                <!-- 2 row buttons -->
+                <button class="btn disabled" value="MR">MR</button>
+                <button class="btn blue" value="4">4</button>
+                <button class="btn blue" value="5">5</button>
+                <button class="btn blue" value="6">6</button>
+                <button class="btn red" value="*">*</button>
+                <button class="btn blue" value="%">%</button>
+                <!-- 3 row buttons -->
+                <button class="btn disabled" value="MS">MS</button>
+                <button class="btn blue" value="1">1</button>
+                <button class="btn blue" value="2">2</button>
+                <button class="btn blue" value="3">3</button>
+                <button class="btn red" value="-">-</button>
+                <button class="btn blue" value="+">+</button>
+                <!-- 4 row buttons -->
+                <button class="btn disabled" value="M+">M+</button>
+                <button class="btn blue" value="0">0</button>
+                <button class="btn blue" value="+/-">+/-</button>
+                <button class="btn blue" value=".">.</button>
+                <button class="btn red" value="+">+</button>
+                <button class="btn blue" value="=">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

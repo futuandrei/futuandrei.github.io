@@ -1,0 +1,241 @@
+/* ==== GLOBAL STYLES ==== */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: steelblue;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+/* ==== FLEX CONTAINERS ==== */
+.container {
+  max-width: 280px; /* Example width for main content */
+  margin: 0 auto;
+}
+
+.container-hor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers content vertically */
+  height: 100vh;
+}
+
+.container-ver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==== BORDER BOX (Ensures inner content isn't pushed too far) ==== */
+.border-box {
+  width: 260px;
+  height: 252px;
+  border: 20px solid;
+  border-image-source: url("./assets/calculator-background.jpg");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  background-color: #d6d3ce;
+  box-sizing: border-box; /* Ensures padding and border don't add extra space */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.border-box-inner {
+  padding: 5px;
+  margin: -20px; /* Adjusts for border pushing content */
+}
+
+/* ==== HEADER ==== */
+.header {
+  max-width: 280px;
+  width: 100%;
+  margin: 5px auto 0;
+  /* width: 108%;
+  width: 110%; */
+  margin-top: -3px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #08246b;
+  height: 20px;
+  /* padding: 0 5px; */
+}
+
+.header-bottom {
+  max-height: 20px;
+  width: 100%;
+  align-content: center;
+}
+
+/* ==== ICON STYLES ==== */
+.icon-title {
+  display: flex;
+  align-items: center;
+}
+
+.three-buttons {
+  padding-right: 2px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.square-button {
+  width: 15px;
+  height: 14px;
+}
+
+/* ==== NAVIGATION MENU ==== */
+ul {
+  display: flex;
+  height: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 5px;
+  cursor: pointer;
+  color: black;
+}
+
+li:hover {
+  color: blue;
+}
+
+.first {
+  text-decoration: underline;
+}
+
+/* ==== INPUT FIELD ==== */
+.display {
+  height: 25px;
+  border: 10px solid;
+  border-image-source: url("./assets/calculator-background-display.jpg");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  background-color: white;
+  box-sizing: border-box;
+  /* text-align: right; */
+  font-size: 14px;
+
+  /* Flexbox for vertical alignment */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Ensures text stays on the right */
+  padding-right: 5px; /* Keeps text away from right edge */
+}
+
+/* ==== BUTTONS (Improved Grid) ==== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.buttons-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.btn {
+  /* height: 25px; */
+  height: 30px;
+  flex: 1; /* Makes buttons stretch evenly */
+  max-width: 35px;
+  border: 10px solid;
+  border-image-source: url("./assets/calculator-background.jpg");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  background-color: #d6d3ce;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  /* height: 25px; */
+  height: 30px;
+  flex: 1; /* Makes buttons stretch evenly */
+  max-width: 35px;
+  border: 10px solid;
+  border-image-source: url("./assets/button-hover.jpg");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  background-color: #e3e0da;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:active {
+  /* height: 25px; */
+  height: 30px;
+  flex: 1; /* Makes buttons stretch evenly */
+  max-width: 35px;
+  border: 10px solid;
+  border-image-source: url("./assets/button-pressed.jpg");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  background-color: #bdbab5;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-top .btn {
+  max-width: 100%; /* Overrides the 35px restriction */
+}
+
+.disabled {
+  pointer-events: none; /* Prevents clicks */
+  opacity: 0.5; /* Makes it visually faded */
+  background-color: #ccc; /* Changes background */
+  color: gray; /* Changes text color */
+  border-color: #999; /* Lightens border */
+}
+
+#disabled {
+  color: gray;
+}
+
+.btn.red {
+  color: red;
+}
+
+.btn.blue {
+  color: blue;
+}
